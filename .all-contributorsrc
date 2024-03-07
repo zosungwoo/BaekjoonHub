@@ -137,7 +137,80 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/30895117?v=4",
       "profile": "https://github.com/zosungwoo",
       "contributions": [
-        "bug"
+        "bug",
+        "code"
+      ]
+    },
+    {
+      "login": "seejnn",
+      "name": "seejnn",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44645578?v=4",
+      "profile": "http://dev.seejnn.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "whatasame",
+      "name": "Jeonggyu Choi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/97666463?v=4",
+      "profile": "http://whatasame.tistory.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "kickbelldev",
+      "name": "Jongchan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31813451?v=4",
+      "profile": "https://github.com/kickbelldev",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "terrinens",
+      "name": "terrinens",
+      "avatar_url": "https://avatars.githubusercontent.com/u/132042125?v=4",
+      "profile": "https://github.com/terrinens",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "thwang26",
+      "name": "Taewon Hwang",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102675847?v=4",
+      "profile": "https://github.com/thwang26",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "tkdcks7",
+      "name": "GSC",
+      "avatar_url": "https://avatars.githubusercontent.com/u/141592320?v=4",
+      "profile": "https://github.com/tkdcks7",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "yunnn426",
+      "name": "yunnn426",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95147113?v=4",
+      "profile": "https://github.com/yunnn426",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "sonwonjae",
+      "name": "sonwonjae",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87295692?v=4",
+      "profile": "https://velog.io/@sonwj0915",
+      "contributions": [
+        "code"
       ]
     }
   ],

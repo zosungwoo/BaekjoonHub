@@ -1,18 +1,27 @@
+/** NOTE: goormlevel에서 사용할 util 모음입니다. */
+
 /**
  * 로딩 버튼 추가
  */
 function startUpload() {
+  /**
+   * goormlevel에는 항상 해당 elem이 없음
+   * loader나 check DOM 관리하기 위한 DOM
+   */
   let elem = document.getElementById('BaekjoonHub_progress_anchor_element');
   if (elem !== undefined) {
+    /** goormlevel에서는 항상 해당 조건문을 실행함 */
     elem = document.createElement('span');
     elem.id = 'BaekjoonHub_progress_anchor_element';
     elem.className = 'runcode-wrapper__8rXm';
     elem.style = 'margin-left: 10px;padding-top: 0px;';
   }
   elem.innerHTML = `<div id="BaekjoonHub_progress_elem" class="BaekjoonHub_progress"></div>`;
-  const target = document.querySelector('#modal-dialog > div.modal-dialog > div.modal-content > div.modal-footer');
+
+  /** 정답을 맞추면 렌더링되는 target element */
+  const target = [...document.querySelectorAll('#FrameBody div > p[class] > span')].find(($element) => $element.textContent === '정답입니다.');
   if (!isNull(target)) {
-    target.prepend(elem);
+    target.append(elem);
   }
   // start the countdown
   startUploadCountDown();
@@ -29,13 +38,11 @@ function markUploadedCSS(branches, directory) {
   uploadState.uploading = false;
   const elem = document.getElementById('BaekjoonHub_progress_elem');
   elem.className = 'markuploaded';
-  const uploadedUrl = "https://github.com/" +
-              Object.keys(branches)[0] + "/tree/" + 
-              branches[Object.keys(branches)[0]] + "/" + directory;
-  elem.addEventListener("click", function() {
+  const uploadedUrl = 'https://github.com/' + Object.keys(branches)[0] + '/tree/' + branches[Object.keys(branches)[0]] + '/' + directory;
+  elem.addEventListener('click', function () {
     window.location.href = uploadedUrl;
   });
-  elem.style.cursor = "pointer";
+  elem.style.cursor = 'pointer';
 }
 
 /**
@@ -66,7 +73,7 @@ function startUploadCountDown() {
  * @return {string} 포맷된 스트링
  */
 
-function getDateString(date){
+function getDateString(date) {
   const year = date.getFullYear();
   const month = (date.getMonth() + 1).toString().padStart(2, '0');
   const day = date.getDate().toString().padStart(2, '0');
